@@ -14,4 +14,4 @@ index-page3.html : 使用google map javascriptApi顯示地圖於頁面。
 
 index-page4.html : 利用jquery fadeIn及animate動畫(animate chain及feedback function讓動畫能夠接續進行) 完成進場動畫效果，RWD響應於螢幕寬度(<768PX)和(<440PX)情況調整標題大小。
 
-form.html : 達配bootstrap5框架建立表單，當按下提交按鈕時做抽獎動作，利用javascript math.random 設置不同的條件回應alert彈出框。
+form.html : 搭配bootstrap5框架建立表單，當按下提交按鈕時做抽獎動作，利用javascript math.random 設置不同的條件回應alert彈出框。
