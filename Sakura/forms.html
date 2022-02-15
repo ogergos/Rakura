@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="forms.css">
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <form style="width: 60%; height: 70%; margin: 50px auto; border: 1px solid white; background-color: white;" action="">
+        <div>
+            <label for="name" class="form-label">姓名</label>
+            <input style="width: 10%;" type="text" class="form-control" id="name">
+        </div>
+        <div>
+            <label for="gender1" class="form-label">性別</label>
+            <input type="radio" class="form-check-input" name="gend" id="gender1">
+            <label for="gender1" class="form-check-label">男</label>
+            <input type="radio" class="form-check-input" name="gend" id="gender2">
+            <label for="gender2" class="form-check-label">女</label>
+        </div>
+        <div style="width: 70%;" class="input-group">
+            <label for="birth" class="form-label">生日</label>
+            <input type="text" class="form-control" id="birth" placeholder="年份">
+            <span class="input-group-text">\</span>
+            <input type="text" class="form-control"placeholder="月">
+            <span class="input-group-text">\</span>
+            <input type="text" class="form-control"placeholder="日期">
+        </div>
+        <div>
+            <label class="form-label">現在身分(職業類別)</label>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="profess" id="profession" value="profes">
+                <label for="profession" class="form-label">學生</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="profess" id="profession2" value="profes">
+                <label for="profession2" class="form-label">上班族</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="profess" id="profession3" value="profes">
+                <label for="profession3" class="form-label">其他</label>
+            </div>
+        </div>
+        <div>
+            <label class="form-label">從何處得知活動消息?</label>
+            <div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="activ1" id="activity1" value="profes">
+                    <label for="activity1" class="form-label">廣告</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="activ2" id="activity2" value="profes">
+                    <label for="activity2" class="form-label">朋友介紹</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="activ3" id="activity3" value="profes">
+                    <label for="activity3" class="form-label">其他</label>
+                </div>
+            </div>
+        </div>
+        <div>
+            <label for="question2" class="form-label">為何對此活動感興趣?</label>
+            <textarea class="form-control" rows="3" id="questions2"></textarea>
+        </div>
+        <div>
+            <label for="question3" class="form-label">是否願意參加本次活動?</label>
+            <input type="radio" class="form-check-input" name="join" id="join1">
+            <label for="join1" class="form-check-label">是</label>
+            <input type="radio" class="form-check-input" name="join" id="join2">
+            <label for="join2" class="form-check-label">否</label>
+        </div>
+        <div>
+            <button id="submit-btn" type="submit" class="btn btn-success">提交</button>
+        </div>
+        <script>
+            var submit = document.getElementById("submit-btn");
+
+            submit.onclick = function(){
+                var x = Math.random();
+                if(x <= 0.1){
+                    alert("恭喜中獎(gogolo)");
+                }
+                else if(0.1 < x <= 0.2){
+                    alert("恭喜中獎(switch)");
+                }
+                else if(0.2 < x <= 0.5){
+                    alert("恭喜中獎(iphone)");
+                }
+                else{
+                    alert("可惜沒中獎")
+                }
+            }
+        </script>
+    </form>
+</body>
+</html>

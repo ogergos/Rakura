@@ -1,0 +1,65 @@
+
+body{
+    background: url("Pink-sakura-flowers-close-up-petals-hazy_1920x1080.jpg") no-repeat center top;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Caveat', cursive;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+#icon{
+    text-align: right;
+    padding: 5px 10px;
+    margin-right: 10px;
+    position: relative;
+    font-family: 'Caveat', cursive; 
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#sakura{
+    animation: rotate 2s infinite;
+}
+.nav-link{
+    color: gray;
+}
+#article-title{
+    margin: 100px;
+    text-align: center;
+    font-size: 3em;
+}
+#article-text{
+    margin: auto;
+    text-align: center;
+    width: 40%;
+    font-size: 24px;
+    line-height: 48px;
+}
+#submit{
+    display: block;
+    width: 40em;
+    margin: 3em auto;
+}
+#sb-btn{
+    width:20em;
+    padding: 0.5em;
+    margin: auto;
+    font-size: 2em;
+}
+@media only screen and (max-width: 658px){
+    #icon{
+        text-align: center;
+    }
+    #submit{
+        width: 20em;
+    }
+    #sb-btn{
+       width: 10em; 
+    }
+}
+
